@@ -4,3 +4,4 @@ width = 5
 area = length * width
 
 print (f"The area of a rectangle is: {area}")
+
