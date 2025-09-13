@@ -6,16 +6,21 @@
 # It will then project these savings over a year, assuming a fixed interest rate, to demonstrate compound interest’s effect on savings.
 
 
-monthly_income_prompt = input("Enter your monthly income:")
-monthly_income = float (monthly_income_prompt)
+#Getting user input
+monthly_income = input("Enter your monthly income:")
+monthly_income = float(monthly_income)
 
-monthly_expense_prompt = input("Enter your total monthly expenses:")
-monthly_expense = float (monthly_expense_prompt)
-monthly_savings = monthly_expense - monthly_income
+monthly_expenses = input("Enter your total monthly expenses:")
+monthly_expenses = float(monthly_expenses)
 
+#Calculating savings
 annual_interest_rate = 0.05
+monthly_savings = monthly_expenses - monthly_income
+
 
 projected_annual_savings = monthly_savings * 12 + monthly_savings * 12 * 0.05 
+
+
 
 
 
