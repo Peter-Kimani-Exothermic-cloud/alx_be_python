@@ -20,6 +20,12 @@ monthly_savings = monthly_expenses - monthly_income
 
 projected_annual_savings = monthly_savings * 12 + monthly_savings * 12 * 0.05 
 
+print(f"Your monthly savings are $ {monthly_savings:.2f}.") # The `:.2f` part is a little bonus; it tells Python to only show two decimal places,
+# which is perfect for currency.
+
+# And here's the final output, showing the annual projection.
+print(f"Projected savings after one year, with interest, is: ${projected_annual_savings:.2f}.")
+
 
 
 
