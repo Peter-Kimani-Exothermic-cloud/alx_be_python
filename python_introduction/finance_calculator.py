@@ -6,25 +6,17 @@
 # It will then project these savings over a year, assuming a fixed interest rate, to demonstrate compound interest’s effect on savings.
 
 
-#Getting user input
-monthly_income = input("Enter your monthly income:")
-monthly_income = float(monthly_income)
-
-monthly_expenses = input("Enter your total monthly expenses:")
-monthly_expenses = float(monthly_expenses)
-
-#Calculating savings
-annual_interest_rate = 0.05
-monthly_savings = monthly_expenses - monthly_income
+monthly_income = input("Enter your monthly income: ")
+monthly_expenses = input("Enter your total monthly expenses: ")
 
 
-projected_annual_savings = monthly_savings * 12 + monthly_savings * 12 * 0.05 
+monthly_savings = float(monthly_income) - float(monthly_expenses)
 
-print(f"Your monthly savings are $ {monthly_savings:.2f}.") # The `:.2f` part is a little bonus; it tells Python to only show two decimal places,
-# which is perfect for currency.
+projected_savings = monthly_savings * 12 + (monthly_savings * 12 * 0.05)
 
-# And here's the final output, showing the annual projection.
-print(f"Projected savings after one year, with interest, is: ${projected_annual_savings:.2f}.")
+print(f"Your monthly savings are ${monthly_savings:}")
+print(f"Projected savings after one year, with interest, is: ${projected_savings:}")
+
 
 
 
