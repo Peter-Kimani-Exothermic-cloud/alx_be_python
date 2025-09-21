@@ -9,13 +9,13 @@ num1 = float(input("Enter the first number:"))
 
 num2 = float(input("Enter the second number:"))
 
-operator = input("Choose the operation (+, -, *, /):")
+operation = input("Choose the operation (+, -, *, /):")
 
 # --- Match Case Logic Section ---
 # The 'match' statement checks the value of the 'operator' variable.
 # It then looks for a 'case' that matches that value.
 # When it finds a match, it runs the code indented below that 'case'.
-match operator:
+match operation:
     # Case 1: If the user entered "+", this code runs.
     case '+':
         # We calculate the sum and store it in the 'result' variable.
@@ -44,7 +44,7 @@ match operator:
     
     case _:
         # We let the user know their input was not valid.
-        print("Invalid operation. Please choose from +, -, *, or /.")
+        print("Please enter a valid operation")
 
 
 
