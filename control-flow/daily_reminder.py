@@ -22,10 +22,12 @@ reminder_message = ""
 match priority:
     # If the user typed "high", this case runs.
     case 'high':
+        # The specific message for high priority is handled here directly.
         reminder_message = f"Reminder: '{task}' is a high priority task"
     
     # If the user typed "medium", this case runs.
     case 'medium':
+        # The specific message for medium priority is handled here directly.
         reminder_message = f"Reminder: '{task}' is a medium priority task"
         
     # If the user typed "low":
@@ -45,10 +47,9 @@ if time_bound == 'yes':
     # We add the "immediate attention" phrase only if the priority is not low.
     # This prevents a low-priority task from being marked as urgent.
     if priority != 'low':
-        # We concatenate the strings to add the new phrase.
+        # We add the "immediate attention" phrase with a space at the beginning.
         reminder_message += " that requires immediate attention today!"
 
 # --- Output Section ---
 # Finally, we print the complete, customized reminder message.
 print(reminder_message)
-
