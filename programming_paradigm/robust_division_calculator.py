@@ -1,23 +1,21 @@
-#Define a function
-
 def safe_divide(numerator, denominator):
-   
+    """
+    Safely divide two numbers with error handling.
+    Returns a string message with the result or error description.
+    """
     try:
-        #Convert inputs to float
-        numtor = float(numerator)
-        dentor = float(denominator)
-        result = numtor / dentor
-        return f"The result of te division is {result}"
-    
+        # Convert inputs to float
+        num = float(numerator)
+        den = float(denominator)
+
+        # Try division
+        result = num / den
+        return f"The result of the division is {result}"
+
     except ZeroDivisionError:
-        print("Error: Cannot divide by 0")
-    
+        return "Error: Cannot divide by zero."
     except ValueError:
-        print("Error: Please enter a number")
-    
-    finally:
-        print("Division Successful")
-    
+        return "Error: Please enter numeric values only."
 
 
 
