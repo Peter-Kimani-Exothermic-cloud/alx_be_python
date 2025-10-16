@@ -6,7 +6,7 @@ class Book:
     
     
     def __str__(self):              #User friendly representation
-        return f" {self.title} by {self.author} , published in {self.year}"
+        return f"{self.title} by {self.author} , published in {self.year}"
     
     def __repr__(self):             #Official string representation that can recreate the object
         return f"Book({self.title}', '{self.author}', {self.year})"
